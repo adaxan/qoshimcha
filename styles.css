@@ -1,0 +1,106 @@
+/* body {
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .field {
+    width: 100vw;
+    height: 100vh;
+    background: url('https://w7.pngwing.com/pngs/168/212/png-transparent-football-pitch-street-football-athletics-field-graphy-football-field-angle-text-rectangle-thumbnail.png') no-repeat center center;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .ball {
+    width: 50px;
+    height: 50px;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/d/d3/Soccerball.svg') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease;
+  } */
+
+
+  /* body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  #text {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+    width: 1000px;
+  }
+  
+  .controls {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .controls label {
+    margin-right: 10px;
+    font-size: 1rem;
+  }
+  
+  input[type="color"] {
+    cursor: pointer;
+    border: none;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+  } */
+  
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    background: #f0f0f0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  #toggle-light {
+    z-index: 2;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .dark-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, transparent 100px, rgba(0, 0, 0, 0.9) 200px);
+    pointer-events: none;
+    transition: background 0.3s ease;
+    z-index: 1;
+    display: none;
+  }
+  
+  body.dark-mode .dark-overlay {
+    display: block;
+  }  
